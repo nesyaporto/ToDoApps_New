@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MVVC_ToDo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string-array name="kategori">
+        <item>Business</item>
+        <item>Personal</item>
+    </string-array>
+</resources>
