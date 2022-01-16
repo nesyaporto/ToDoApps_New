@@ -9,13 +9,10 @@ interface TaskDao {
     @Insert
     suspend fun insert(taskEntry: TaskEntry)
 
-    @Delete
-    suspend fun delete(taskEntry: TaskEntry)
-
     @Update
     suspend fun update(taskEntry: TaskEntry)
 
-    @Query("SELECT * FROM daftar_todo ORDER BY waktu DESC")
+    @Query("SELECT * FROM TaskEntry ORDER BY waktu DESC")
     fun getAllTask(): LiveData<List<TaskEntry>>
 
 }

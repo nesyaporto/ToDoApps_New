@@ -43,7 +43,6 @@ private val viewModel: TaskViewModel by viewModels()
                         Toast.LENGTH_SHORT
                     ).show()
                     return@setOnClickListener
-
                 }
 
                 val judul_str = etEnterTask.text.toString()
@@ -53,7 +52,6 @@ private val viewModel: TaskViewModel by viewModels()
                     judul_str,
                     kategorispin,
                     System.currentTimeMillis()
-
                 )
     viewModel.insertData(taskEntry)
                 Toast.makeText(requireContext(),"Successfully Added!", Toast.LENGTH_SHORT).show()

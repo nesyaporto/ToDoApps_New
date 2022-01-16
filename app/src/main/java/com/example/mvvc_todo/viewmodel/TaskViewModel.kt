@@ -28,15 +28,11 @@ class TaskViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    fun updateData(taskEntry: TaskEntry){
-        viewModelScope.launch(Dispatchers.IO){
-            repository.updateData(taskEntry)
-        }
+    fun onTaskSelected(taskEntry: TaskEntry){
+
     }
 
-    fun deleteData(taskEntry: TaskEntry){
-        viewModelScope.launch(Dispatchers.IO){
-            repository.deleteData(taskEntry)
-        }
+    fun onTaskCheckedChanged(taskEntry: TaskEntry, isChecked:Boolean)=viewModelScope.launch {
+        taskDao.update(taskEntry.copy(complete = isChecked))
     }
 }

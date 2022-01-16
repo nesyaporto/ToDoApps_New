@@ -20,7 +20,7 @@ abstract class TaskDatabase: RoomDatabase(){
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         TaskDatabase::class.java,
-                        "daftar_todo"
+                        "TestDB2"
                     ).fallbackToDestructiveMigration().build()
                     INSTANCE = instance
                 }
