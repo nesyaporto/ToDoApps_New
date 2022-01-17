@@ -26,11 +26,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:buttonTint="@color/grey"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:setKategori="@{taskEntry.kategori}" />
+                android:aturWarna="@{taskEntry.kategori}"
+                android:button="@null"
+                android:scaleX="0.50"
+                android:scaleY="0.50"
+                />
 
 
             <TextView

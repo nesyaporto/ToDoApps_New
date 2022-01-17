@@ -6,14 +6,14 @@ import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.example.mvvc_todo.R
 
-@BindingAdapter ("setKategori")
-fun setKategori(view: CheckBox, kategori:Int ){
+@BindingAdapter ("android:aturWarna")
+fun aturWarna(view: CheckBox, kategori:Int ){
     when(kategori){
         0 -> {
-            view.setButtonDrawable(view.context.getDrawable(R.drawable.custom_business))
+            view.setBackgroundResource(R.drawable.custom_business)
         }
        1 -> {
-           view.setButtonDrawable(view.context.getDrawable(R.drawable.custom_personal))
+           view.setBackgroundResource(R.drawable.custom_personal)
        }
     }
 }
